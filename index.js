@@ -1,20 +1,5 @@
 // get nutrition info for one ingredient
 async function getRecipeNutrition(app_id, app_key, data) {
-    // await fetch(`https://api.edamam.com/api/nutrition-details?app_id=${app_id}&app_key=${app_key}`, {
-    //     method: "POST",
-    //     headers: {
-    //         "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(data)
-    // })
-    // .then(res => res.json())
-    // .then(response => {
-    //     console.log(response);
-    // })
-    // .catch(err => {
-    //     console.log(err);
-    // });
-
     try {
         const res = await fetch(`https://api.edamam.com/api/nutrition-details?app_id=${app_id}&app_key=${app_key}`, {
             method: "POST",
